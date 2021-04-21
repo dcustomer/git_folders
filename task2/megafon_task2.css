@@ -1,0 +1,83 @@
+/* CSS Document */
+* {
+ margin: 0;
+ padding: 0;
+}
+
+#listItem {
+ /*border: 1px solid green;*/
+ width: 30%;
+ margin: 0 auto;	
+ margin-top: 20%;
+ height: 3em;
+ position: relative;
+ margin-bottom: 2em;
+}
+
+#listItem input[type="text"] {
+ width: 80%;
+ height: 3em;
+ margin-top: .5%;
+ padding-left: 10px;
+ position: absolute;
+ left: 6px;
+ z-index: 2;
+ border: 1px solid silver;
+ border-right: none;
+ border-top-left-radius: 5px;
+ border-bottom-left-radius: 5px;
+}
+
+#listItem input[type="submit"] {
+ width: 17%;
+ height: 3.14em;
+ position: absolute;
+ right: 0px;
+ margin-top: .5%;
+ z-index: 1;
+ border: 1.5px solid silver;
+ border-left: none;
+ border-top-right-radius: 5px;
+ border-bottom-right-radius: 5px;
+ background-color: #3d6bdf;
+ color: #FFFFFF;
+}
+
+#listDiv {
+ border: 1px solid green;
+ margin: 0 auto;
+ width: 28.7%;
+ height: 3em;
+ border: 1px solid silver;
+ border-radius: 5px;
+ margin-top: 1em;
+ padding-left: 10px;
+ position: relative;
+}
+
+#listDiv span {
+ /*border: 1px solid green;*/
+ line-height: 2em;
+ margin-top: .5em;
+ position: absolute;
+}
+
+.span1 {
+ display: block;
+ float: left;
+ width: 80%;
+}
+
+.span2 {
+ display: block;
+ float: left;
+ width: 10%;
+ right: 0;
+ text-align: center;	
+}
+
+.span2 a {
+ text-decoration: none;
+ color: #FF0000;
+}
+
