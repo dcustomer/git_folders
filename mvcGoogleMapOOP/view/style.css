@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --orange: #ff8700;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .1rem solid var(--black);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #eee;
+}
+
+section {
+    padding: 10rem 9%;
+}
+
+section .map {
+    height: 50rem;
+    outline: var(--outline);
+}
+
+section .cityInfo {
+    position: absolute;
+    z-index: 100;
+    margin: .5rem;
+    padding: 1rem 15rem;
+    border: 1px solid var(--border);
+    border-radius: .5rem;
+    background: #fff;
+    color: var(--black);
+    font-size: 1.5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+.header h2 {
+    font-size: 2.5rem;
+    font-weight: var(--border);
+    color: var(--black);
+}
+
+.header .icons div {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    background: #eee;
+    border-radius: .5rem;
+    color: var(--black);
+    font-size: 2rem;
+    text-align: center;
+    margin-right: .3rem;
+    cursor: pointer;
+}
+
+.header .icons div:hover {
+    background: var(--orange);
+    color: #fff;
+}
+
+.header .login-form {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.header .login-form.active {
+    right: 2rem;
+    transition: .2s linear;
+}
+
+.header .login-form h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.header .login-form .box {
+    width: 100%;
+    background: #eee;
+    margin: .7rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.header .login-form p {
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color: var(--light-color);
+}
+
+.header .login-form p a {
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover {
+    background: var(--orange);
+    color: #fff;
+}
+
+section .registDiv {
+    /*border: 1px solid green;*/
+    width: 50%;
+    margin: 0 auto;
+}
+
+section .registDiv span {
+    /*border: 2px solid red;*/
+    font-size: 1.5rem;
+
+}
+
+section .registDiv span input {
+    width: 90%;
+    height: 3rem;
+    background: none;
+    border-bottom: var(--outline);
+    margin-bottom: 1rem;
+    text-transform: none;
+}
+
+.admContent {
+    font-size: 1.5rem;
+    font-weight: var(--border);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: var(--black);
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 1rem;
+}
+
+section .sideNav {
+    /*height: 5rem;
+    border: 1px solid green;*/  
+}
+
+section .sideNav .leftDiv {
+    /*border: 1px solid red;*/
+    margin: 3rem 2rem;
+    margin-top: 0;
+    border-radius: .5rem;
+    background: #fff;
+    padding-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+section .sideNav .leftDiv p {
+    background: var(--orange);
+    width: 100%;
+    padding: 1rem .5rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+section .sideNav .leftDiv a {
+    display: block; 
+    text-transform: none;
+    margin: 1rem 1rem;
+    color: var(--black);
+}
+
+section .sideNav .leftDiv a:hover {
+    color: var(--orange);
+}
+
+section .admMainDiv {
+    height: 5rem;
+    /*border: 1px solid red;*/
+}
+
+section .admMainDiv .admHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .admMainDiv .admHeader p a {
+    color: var(--black);
+}
+
+section .admMainDiv .admHeader p a:hover {
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+.formDiv {
+    margin: 2rem .5rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    padding-bottom: 3rem;
+    border: var(--outline);
+}
+
+.formDiv p {
+    padding: 1.5rem .5rem;
+    background: var(--black);
+    margin-bottom: 2rem;
+}
+
+.formDiv form {
+    margin: .5rem 2rem;
+}
+
+.formDiv .addCityForm input[type=text] {
+    display: block;
+    /*background: #eee;*/
+    margin-bottom: 1rem;
+    width: 50rem;
+    height: 2.7rem;
+    border: none;
+    border-bottom: var(--outline);
+    /*padding-top: 1.5rem;*/
+}
+
+.formDiv .addCityForm input[type=file] {
+    display: block;
+    border: none;
+    border-bottom: var(--outline);
+    width: 50rem;
+    height: 2.7rem;
+    margin-bottom: 1rem;
+}
+
+.formDiv .addCityForm select {
+    display: block;
+    border: none;
+    width: 50rem;
+    height: 2.7rem;
+    margin-bottom: 1rem;
+    background: #fff;
+    border-bottom: var(--outline);
+}
+
+.citiesRecDiv {
+    border: var(--outline);
+    box-shadow: var(--box-shadow);
+    margin: 2rem .5rem;
+    background: #fff;
+    font-size: 1.2rem;
+    padding-bottom: 5rem;
+    color: var(--black);
+}
+
+.citiesRecDiv p {
+    padding: 1.5rem .5rem;
+    background: var(--black);
+    margin-bottom: 2rem;
+}
+
+.cityTable {
+    /*border: 1px solid red;*/
+    margin: 0 auto;
+}
+
+.citiesRecDiv .cityTable tr:nth-child(even) {
+    background: #eee;
+}
+
+.citiesRecDiv .cityTable th {
+    padding: .5rem 3rem;
+    background: var(--orange);
+    color: #fff;
+}
+
+.citiesRecDiv .cityTable td {
+    padding: .5rem 3rem;
+}
+
+.citiesRecDiv .cityTable td:nth-child(3),
+.citiesRecDiv .cityTable td:nth-child(4) {
+    color: red;
+}
+
+.citiesRecDiv .cityTable td a {
+    color: var(--black);
+}
+
+.citiesRecDiv .cityTable td a:hover {
+    color: var(--orange);
+}
+
+
+
+
+
+
+
+
